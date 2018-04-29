@@ -1,0 +1,23 @@
+@import 'styles/_globals.scss';
+
+.MainGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .gridRow{
+        flex-direction: row;
+        display: flex;
+        border-left: $gridBorder;
+        border-right: $gridBorder;
+    }
+    > .gridRow:first-child {
+        border: $gridBorder;
+        border-bottom: 0px;
+    }
+    > .gridRow:last-child {
+        border: $gridBorder;
+        border-top: 0px;
+    }
+}
